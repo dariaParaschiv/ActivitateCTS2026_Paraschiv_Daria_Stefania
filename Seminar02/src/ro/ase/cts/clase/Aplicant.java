@@ -1,14 +1,16 @@
 package ro.ase.cts.clase;
 
+import java.util.Arrays;
+
 public abstract class Aplicant{
+	private static int punctajMinim = 80;
 	protected String nume;
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
+	protected int nrProiecte;
 	protected String[] denumireProiect;
-	
-	
+
 	public String getNume() {
 		return nume;
 	}
@@ -21,49 +23,54 @@ public abstract class Aplicant{
 	public void setPrenume(String prenume) {
 		this.prenume = prenume;
 	}
-	public int getVarsta() {
-		return varsta;
-	}
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
-		}
-	public int getPunctaj() {
-		return punctaj;
+	public void afisareStatut(){
+		StringBuilder sb = new StringBuilder("Aplicantul");
+		sb.append(this.nume).append(" ").append(this.prenume);
+		sb.append(" ").append(this.punctaj > Aplicant.punctajMinim ? " ":" nu ");
+		sb.append("a fost acceptat");
+		System.out.println(sb.toString());
 	}
+
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
-	
 
-	
+	public abstract void afisareFinantare();
+
 	public Aplicant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumireProiect) {
 		super();
 		this.nume = nume;
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
+		this.nrProiecte = nrProiecte;
 		this.denumireProiect = denumireProiect;
 	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
+	public int getNrProiecte() {
+		return nrProiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte, String[] vect) {
+	public void setNr_proiecte(int nrProiecte, String[] vect) {
 
-		this.nr_proiecte = nr_proiecte;
+		this.nrProiecte = nrProiecte;
 		this.denumireProiect=denumireProiect;
 	}
 
-
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("Aplicant{");
+		sb.append("nume='").append(nume).append('\'');
+		sb.append(", prenume='").append(prenume).append('\'');
+		sb.append(", varsta=").append(varsta);
+		sb.append(", punctaj=").append(punctaj);
+		sb.append(", nrProiecte=").append(nrProiecte);
+		sb.append(", denumireProiect=").append(Arrays.toString(denumireProiect));
+		sb.append('}');
+		return sb.toString();
+	}
 }

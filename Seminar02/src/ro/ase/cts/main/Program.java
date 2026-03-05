@@ -15,8 +15,10 @@ public class Program {
 		AplicantiLoader angajatiLoader = new AngajatiLoader();
 		try {
 			listaAngajati = angajatiLoader.load("angajati.txt");
-			for(Aplicant angajat:listaAngajati)
+			for(Aplicant angajat:listaAngajati) {
 				System.out.println(angajat.toString());
+				angajat.afisareFinantare();
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
