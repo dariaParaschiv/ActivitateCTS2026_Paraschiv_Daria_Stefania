@@ -1,0 +1,11 @@
+package ro.ase.cts.clase;
+
+public class SupaDeVita extends Supa{
+    public SupaDeVita(int gramaj, double pret) {
+        super(gramaj, pret);
+    }
+
+    public void afisareDescriere(){
+        System.out.println("Supa de vita: " + super.toString());
+    }
+}
