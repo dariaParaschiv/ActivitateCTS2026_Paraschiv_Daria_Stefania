@@ -5,7 +5,8 @@ public class Papanasi extends Desert{
         super(calorii, pret, gramaj);
     }
 
-    void afinisareDescriere(){
+    @Override
+    public void afisareDescriere() {
         System.out.println("Papanasi: " + super.toString());
     }
 }

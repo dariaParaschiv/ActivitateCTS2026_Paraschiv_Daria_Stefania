@@ -5,6 +5,7 @@ public class Clatite extends Desert{
         super(calorii, pret, gramaj);
     }
 
+    @Override
     public void afisareDescriere(){
         System.out.println("Clatite: " + super.toString());
     }

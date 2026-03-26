@@ -5,6 +5,7 @@ public class SupaDeVita extends Supa{
         super(gramaj, pret);
     }
 
+    @Override
     public void afisareDescriere(){
         System.out.println("Supa de vita: " + super.toString());
     }

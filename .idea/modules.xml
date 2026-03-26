@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Activitate1/Activitate1.iml" filepath="$PROJECT_DIR$/Activitate1/Activitate1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Activitate2/Activitate2.iml" filepath="$PROJECT_DIR$/Activitate2/Activitate2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Activitate3/Activitate3.iml" filepath="$PROJECT_DIR$/Activitate3/Activitate3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Activitate4/Activitate4.iml" filepath="$PROJECT_DIR$/Activitate4/Activitate4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Activitate5/Activitate5.iml" filepath="$PROJECT_DIR$/Activitate5/Activitate5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Prototype/Prototype.iml" filepath="$PROJECT_DIR$/Prototype/Prototype.iml" />
       <module fileurl="file://$PROJECT_DIR$/STB/STB.iml" filepath="$PROJECT_DIR$/STB/STB.iml" />
       <module fileurl="file://$PROJECT_DIR$/STB02/STB02.iml" filepath="$PROJECT_DIR$/STB02/STB02.iml" />

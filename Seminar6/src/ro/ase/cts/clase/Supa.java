@@ -1,8 +1,8 @@
 package ro.ase.cts.clase;
 
 public abstract class Supa implements FelDeMancare {
-    int gramaj;
-    double pret;
+    private int gramaj;
+    private double pret;
 
     public Supa(int gramaj, double pret) {
         this.gramaj = gramaj;
