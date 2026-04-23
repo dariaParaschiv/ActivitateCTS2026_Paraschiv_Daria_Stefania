@@ -30,8 +30,10 @@
       <module fileurl="file://$PROJECT_DIR$/STB/STB.iml" filepath="$PROJECT_DIR$/STB/STB.iml" />
       <module fileurl="file://$PROJECT_DIR$/STB02/STB02.iml" filepath="$PROJECT_DIR$/STB02/STB02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar02/Seminar02.iml" filepath="$PROJECT_DIR$/Seminar02/Seminar02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar09/Seminar09.iml" filepath="$PROJECT_DIR$/Seminar09/Seminar09.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar1_1096.iml" filepath="$PROJECT_DIR$/Seminar1_1096.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar6/Seminar6.iml" filepath="$PROJECT_DIR$/Seminar6/Seminar6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar9/Seminar9.iml" filepath="$PROJECT_DIR$/Seminar9/Seminar9.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spital/Spital.iml" filepath="$PROJECT_DIR$/Spital/Spital.iml" />
       <module fileurl="file://$PROJECT_DIR$/singleton/singleton.iml" filepath="$PROJECT_DIR$/singleton/singleton.iml" />
     </modules>
